@@ -1,0 +1,345 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;  
+    background: #F5F8FA;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+/* CSS Variables */
+:root {
+    --primary-color: #1D2C3C;
+    --primary-white: #FFFFFF;
+    --primary-border-color:#E0E6EA;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px 10px 10px;
+    border-bottom: 2px solid var(--primary-border-color);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+nav ul > button{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px; 
+    cursor: pointer;
+    font-weight: 600;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    margin: 100px 150px;
+}
+
+#white-card {
+    background-color: var(--primary-white);
+    width: 892px;
+    box-shadow: 0px 5px 15px 0px #0000000D;
+    box-shadow: 0px 15px 35px 0px #2B404E18;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.first-compartment {
+    padding: 30px;
+    border-bottom: 1px solid var(--primary-border-color); 
+
+}
+
+.first-compartment > h1{
+    color: var(--primary-color);  
+    font-weight: 500;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.second-compartment {
+    padding: 30px;
+    border-bottom: 1px solid var(--primary-border-color); 
+}
+
+#basic {
+    display: flex;
+    align-items: center; 
+}
+
+
+#basic > h3 {
+    margin-left: 5px;
+    font-size: 1rem;
+}
+
+#basic > img {
+    width: 25px;
+}
+
+#blue-card {
+    background-color: #1179BF;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 60px;
+    color: var(--primary-white);
+}
+
+#plan > h2{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.dollar > strong {
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+
+#plan > p {
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+#details ul{
+    padding: 0;
+    margin-block-start: 30px; 
+}
+
+#details ul > li {
+    margin-block-end: 10px;
+    list-style-type: none;
+    font-size: 15px;
+}
+
+#details ul > li::before { 
+    content: '';
+    display: inline-block;
+    height: 20px;
+    margin-inline-end: 10px;
+    width: 20px;
+    background: url(/images/CombinedShape.png);
+}
+ 
+
+#switch {
+    margin-block-start: 30px; 
+}
+
+#switch > p{
+    margin-block-end: 10px;
+}
+
+#switch > h6 { 
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #B9F5FF;
+    width: fit-content;
+}
+
+#quote {
+    border-block-start: 1px solid rgb(235, 231, 231);
+    margin-block-start: 50px;
+    padding-block-start: 30px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    margin-block-start: 10px;
+}
+
+.hero > img{
+    border-radius: 50%;
+    margin-inline-end: 10px;
+}
+
+.hero > p{
+    font-weight: 100;
+    font-size: 15px;
+}
+
+
+label { 
+    font-size: 13px;
+    color: var(--primary-color);
+}
+
+input {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    height: 36px;
+    background: #EDEFF2;
+}
+
+::placeholder {
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.names {
+    margin-block: 10px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.email > input{
+    width: 370px;
+}
+.third-compartment {
+    padding: 30px;
+    border-block-end: 1px solid var(--primary-border-color); 
+}
+
+#payment {
+    display: flex;
+    align-items: center;
+}
+
+#payment>h3 {
+    margin-inline-start: 5px;
+    font-size: 1rem;
+}
+
+#payment>img {
+    width: 25px;
+}
+
+#CreditCard {
+    margin-block-start: 10px;
+}
+
+#CreditCard > input{
+    width: 370px;
+}
+
+.fourth-compartment {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#purchase > button {
+    background: #038E7D;
+    width: 483px;
+    border: none;
+    color: var(--primary-white);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#support {  
+    display: flex;
+    justify-content: center;
+    margin-block-start: 10px;
+}
+
+#support > img {
+    margin-inline-end: 3px;
+    width: 20px;
+    height: 20px;
+}
+
+#support > p {
+    color: #646E7A;
+    font-size: 14px;
+}
+
+#support > p > strong{
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+#purchase>img {  
+    margin: 10px auto;
+}
+ 
+footer > p {
+    color: #636B6F;
+    font-size: 14px;
+    text-align: center;
+}
+footer > p > b{
+    color: #31708F;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+}
