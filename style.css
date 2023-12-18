@@ -135,6 +135,34 @@ main {
     border-bottom: 1px solid var(--primary-border-color); 
 }
 
+
+.CC{
+    display:flex;
+}
+
+.CC input:nth-child(1) {
+    width: 400px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+}
+
+.CC input:nth-child(2) {
+    width:100px;
+    border-radius: 0px;
+}
+
+.CC input:nth-child(3) {
+    border-radius: 0px;
+    width:100px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+}
+
+
 #basic {
     display: flex;
     align-items: center; 
